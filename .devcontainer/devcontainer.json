@@ -2,17 +2,25 @@
 // For config options, see the devcontainers
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "PROJECT Devcontainer",
-	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
-	"features": {
-		"ghcr.io/devcontainers-contrib/features/poetry:2": {
-			"version": "latest"
-		}
+	"name": "geoips_driver Devcontainer",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye", // in the future can use geoips image
+	"postCreateCommand": "pip install -e .[doc,lint,test]",
+    "features": {
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
 	},
-	"postCreateCommand": "poetry install --with dev --extras 'doc lint test'",
+	"mounts": [
+		"source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
+		"source=${localEnv:HOME}/.claude,target=/home/vscode/.claude,type=bind,consistency=cached"
+	],
+	"containerEnv": {},
+	"runArgs": [
+	],
+	"initializeCommand": "",
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"Anthropic.claude-code",
 				"lextudio.restructuredtext",
 				"ms-python.python",
 				"ms-python.vscode-pylance",
@@ -23,7 +31,10 @@
 				"ms-azuretools.vscode-docker",
 				"njpwerner.autodocstring",
 				"esbenp.prettier-vscode",
-				"ms-vscode.live-server"
+				"ms-vscode.live-server",
+				"ms-python.black-formatter",
+				"ms-python.flake8",
+				"trond-snekvik.simple-rst"
 			],
 			"settings": {
 				"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
@@ -31,7 +42,7 @@
 				"python.linting.mypyEnabled": true,
 				"editor.formatOnSave": true,
 				"editor.codeActionsOnSave": {
-					"source.fixAll.ruff": true
+					"source.fixAll.ruff": "always"
 				},
 				"python.testing.pytestEnabled": true,
 				"[python]": {

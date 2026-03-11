@@ -7,7 +7,7 @@ import sys
 sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Project information -----------------------------------------------------
-project = 'PROJECT'
+project = 'merge-word-comments'
 copyright = 'biosafetylvl5'
 author = 'CIRA'
 release = '0.0.0'

@@ -1,4 +1,4 @@
-# PROJECT
+# merge-word-comments
 
 ![Tests](.github/badges/tests-badge.svg)
 ![Coverage](.github/badges/coverage-badge.svg)
@@ -8,11 +8,11 @@
 ![CSpell](.github/badges/cspell-badge.svg)
 ![Commitizen](.github/badges/commitizen-badge.svg)
 
-[![GitHub stars](https://img.shields.io/github/stars/biosafetylvl5/PROJECT.svg)](https://github.com/biosafetylvl5/PROJECT/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/biosafetylvl5/merge-word-comments.svg)](https://github.com/biosafetylvl5/merge-word-comments/stargazers)
 
 ## Contributing
 
-I welcome contributions to PROJECT!
+I welcome contributions to merge-word-comments!
 
 Please follow these general guidelines:
 
@@ -21,7 +21,7 @@ Please follow these general guidelines:
 3.  **Make your changes** and **ensure all linters and tests pass** (the CI will also check for you, but it's helpful to run them locally).
 4.  **Commit your changes** using [Conventional Commits](https://www.conventionalcommits.org/) (see "Commit Messages" below).
 5.  **Push your branch** to your fork.
-6.  **Open a Pull Request** against the `main` (or `dev`) branch of the `biosafetylvl5/PROJECT` repository.
+6.  **Open a Pull Request** against the `main` (or `dev`) branch of the `biosafetylvl5/merge-word-comments` repository.
 7.  Clearly describe your changes in the PR. If it fixes an open issue, please link to it (e.g., "Fixes #123").
 
 If you're planning a larger contribution, it's a good idea to open an issue first to discuss your ideas so your work isn't duplicated/done in vain.
@@ -33,7 +33,7 @@ If you're planning a larger contribution, it's a good idea to open an issue firs
 This repository is configured to use [VS Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers). This is the recommended way to set up your development environment, as it ensures consistency and comes pre-configured with all necessary tools.
 
 1.  Ensure you have Docker Desktop and the "Dev Containers" extension installed in VS Code.
-2.  Clone the repository: `git clone https://github.com/biosafetylvl5/PROJECT.git`
+2.  Clone the repository: `git clone https://github.com/biosafetylvl5/merge-word-comments.git`
 3.  Open the cloned repository folder in VS Code. (You can also do this [without VS code](https://github.com/devcontainers/cli), but that's up to you to figure out.)
 4.  VS Code should prompt you to "Reopen in Container". Click it.
     *   If it doesn't prompt, open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and search for "Dev Containers: Reopen in Container".

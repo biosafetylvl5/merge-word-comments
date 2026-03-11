@@ -4,12 +4,12 @@
 - {doc}`getting-started/quick-start` - Your first steps in 5 minutes
 - {doc}`user-guide/architecture` - Complete usage guide
 
-## What is PROJECT?
+## What is merge-word-comments?
 
 
 ## Who Should Use This?
 
-PROJECT is designed for:
+merge-word-comments is designed for:
 
 You should be familiar with:
 
@@ -44,4 +44,4 @@ user-guide/configuration
 - {ref}`modindex`
 - {ref}`search`
 
-[GitHub Repository](https://github.com/biosafetylvl5/PROJECT)
+[GitHub Repository](https://github.com/biosafetylvl5/merge-word-comments)
