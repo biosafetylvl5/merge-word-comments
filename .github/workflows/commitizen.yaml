@@ -23,7 +23,7 @@ jobs:
         run: pip install commitizen
       - name: Check commit messages
         if: github.event_name == 'push'
-        run: cz check --rev-range ${{ env.COMMITIZEN_START_REV }}..HEAD
+        run: cz check
       - name: Check PR commit messages
         if: github.event_name == 'pull_request'
         run: cz check --rev-range ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}
