@@ -1,0 +1,83 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+*.whl
+dist/
+build/
+.eggs/
+MANIFEST
+__pypackages__/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Testing & coverage
+.coverage
+.coverage.*
+coverage.xml
+coverage*.xml
+htmlcov/
+.pytest_cache/
+.tox/
+nosetests.xml
+pytest.xml
+
+# Type checking
+.mypy_cache/
+.pytype/
+.pyre/
+
+# Linting
+.ruff_cache/
+
+# Docs
+sphinx/_build/
+docs/_build/
+
+# Node (used by prettier for YAML/JSON linting)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+logs/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Claude
+.claude/settings.local.json

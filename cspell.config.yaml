@@ -59,6 +59,9 @@ words:
   - yday
 ignoreWords:
   - norecursedirs
+  - nosetests
+  - pypackages
+  - pytype
   - venv
   - brightgreen
   - genbadge
